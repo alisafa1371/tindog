@@ -1,0 +1,444 @@
+/*********** General *******************/
+
+body {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/***************** Typography ***********/
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.5em;
+}
+
+p {
+  color: #777;
+}
+
+/* Headings */
+.primary-heading {
+  font-size: 3.5rem;
+  color: #fff;
+  text-align: left;
+}
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/*************************** Navigation Bar **********************************/
+
+.navbar-brand {
+  font-family: "Ubuntu Mono";
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+#hero-section .container-fluid {
+  padding: 3% 15%;
+}
+/*********************** Hero section *******************************************/
+
+#hero-section {
+  background-image: linear-gradient(to top, #eb939f, #c74456);
+}
+
+/*Hero section Image*/
+.iphone {
+  transform: rotate(25deg);
+  position: absolute;
+  width: 25%;
+  right: 15%;
+}
+.hero-box {
+  text-align: left;
+}
+
+/* Download button */
+
+.ph-apple-logo {
+  width: 48px;
+  height: 48px;
+}
+
+/**************************** Features section ********************************************/
+
+#features {
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.feature {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 7%;
+}
+
+.features-title {
+  font-size: 1.4rem;
+}
+.features-icon {
+  color: #c74456;
+}
+.features-icon:hover {
+  color: #eb939f;
+}
+
+/************************************ Testimonial section ********************************************/
+
+#testimonials {
+  background-color: #e96c7d;
+  color: #fff;
+}
+.testimonial-text {
+  font-size: 2.5rem;
+}
+
+.testimonial-img {
+  border-radius: 50%;
+  width: 9rem;
+  margin: 2rem;
+}
+
+/******************************** Credit section *****************************************/
+#credits {
+  background-color: #e96c7d;
+  padding-bottom: 3%;
+}
+
+.credits-img {
+  width: 15%;
+  margin: 2rem;
+}
+
+/********************************** Pricing section *****************************************/
+
+#pricing-section {
+  margin: 7.2rem 0;
+}
+
+.pricing-heading {
+  font-size: 2.5rem;
+}
+
+.pricingTable {
+  background: #fff;
+  padding-bottom: 20px;
+  overflow: hidden;
+  justify-content: space-between;
+}
+.pricingTable .pricingTable-header {
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+}
+.pricingTable .pricingTable-header:before {
+  content: "";
+  width: 96%;
+  height: 150%;
+  background: #e9b4bb;
+  position: absolute;
+  top: -90%;
+  left: -20%;
+  z-index: -1;
+  transform: rotate(-42deg);
+}
+.pricingTable .pricingTable-header:after {
+  content: "";
+  width: 100%;
+  height: 190%;
+  background: #e3a2ab;
+  position: absolute;
+  top: -76%;
+  right: -16%;
+  z-index: -2;
+  transform: rotate(20deg);
+}
+.pricingTable .price-value,
+.pricingTable .title {
+  display: inline-block;
+  width: 50%;
+  padding: 30px 0;
+  color: #fff;
+  line-height: 20px;
+}
+.pricingTable .price-value {
+  float: left;
+  font-size: 50px;
+  position: relative;
+  top: 10px;
+  left: -35px;
+}
+.pricingTable .currency {
+  font-size: 20px;
+  position: relative;
+  top: -10px;
+  right: -3px;
+}
+.pricingTable .title {
+  margin: 0;
+  font-size: 20px;
+  text-transform: uppercase;
+  position: relative;
+  top: 10px;
+  right: 7px;
+}
+.pricingTable .pricing-content {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  clear: both;
+}
+.pricingTable .pricing-content li {
+  font-size: 17px;
+  color: #5f5f5f;
+  line-height: 40px;
+}
+.pricingTable .pricingTable-signup {
+  display: block;
+  width: 80%;
+  padding: 10px 0;
+  border: 1px solid #e3a2ab;
+  border-radius: 40px;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #b14468;
+  z-index: 1;
+  text-transform: uppercase;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+}
+.pricingTable .pricingTable-signup:after,
+.pricingTable .pricingTable-signup:before {
+  content: "";
+  border-width: 0;
+  border-style: solid;
+  position: absolute;
+  z-index: -1;
+  transition: all 0.7s ease 0s;
+}
+.pricingTable .pricingTable-signup:before {
+  border-color: transparent transparent transparent #e9b4bb;
+  bottom: 0;
+  left: 0;
+}
+.pricingTable .pricingTable-signup:after {
+  border-color: transparent #e3a2ab transparent transparent;
+  top: 0;
+  right: 0;
+}
+.pricingTable .pricingTable-signup:hover:after,
+.pricingTable .pricingTable-signup:hover:before {
+  border-width: 150px 262px;
+}
+.pricingTable.green .pricingTable-header:before {
+  background: #18a288;
+}
+.pricingTable.green .pricingTable-header:after {
+  background: #1abc9c;
+}
+.pricingTable.green .pricingTable-signup {
+  border-color: #1abc9c;
+  color: #1abc9c;
+}
+.pricingTable.green .pricingTable-signup:before {
+  border-color: transparent transparent transparent #18a288;
+}
+.pricingTable.green .pricingTable-signup:after {
+  border-color: transparent #18a288 transparent transparent;
+}
+.pricingTable.premium-plan .pricingTable-header:before {
+  background: #9f3645;
+}
+.pricingTable.premium-plan .pricingTable-header:after {
+  background: #8b303c;
+}
+.pricingTable.premium-plan .pricingTable-signup {
+  border-color: #9f3645;
+  color: #9f3645;
+}
+.pricingTable.premium-plan .pricingTable-signup:before {
+  border-color: transparent transparent transparent #9f3645;
+}
+.pricingTable.premium-plan .pricingTable-signup:after {
+  border-color: transparent #8b303c transparent transparent;
+}
+.pricingTable.extra-plan .pricingTable-header:before {
+  background: #501b22;
+}
+.pricingTable.extra-plan .pricingTable-header:after {
+  background: #3c141a;
+}
+.pricingTable.extra-plan .pricingTable-signup {
+  border-color: #501b22;
+  color: #501b22;
+}
+.pricingTable.extra-plan .pricingTable-signup:before {
+  border-color: transparent transparent transparent #501b22;
+}
+.pricingTable.extra-plan .pricingTable-signup:after {
+  border-color: transparent #3c141a transparent transparent;
+}
+
+/******************************************** CTA section ******************************************/
+
+#cta-section {
+  background-color: #d23d51;
+  color: #fff;
+}
+.cta-heading {
+  font-size: 2.5rem;
+}
+#cta-section button {
+  margin-top: 2.4rem;
+}
+
+/******************************************** Footer ******************************************/
+
+.footer-icon {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  color: #111;
+  transition: 0.4s all;
+}
+.footer-link:hover,
+.footer-link:active {
+  transform: scale(1.3);
+  color: #8b303c;
+}
+
+/*************************** Queries **************************************/
+@media only screen and (min-width: 2000px) {
+  .iphone {
+    transform: rotate(0deg);
+    position: static;
+    width: 40%;
+  }
+  .hero-box,
+  .hero-box .primary-heading {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .pricingTable .price-value {
+    left: -20px;
+  }
+  .iphone {
+    transform: rotate(0deg);
+    position: static;
+    width: 70%;
+  }
+  .hero-box,
+  .hero-box .primary-heading {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .testimonial-text {
+    font-size: 2rem;
+  }
+  .iphone {
+    width: 40%;
+    margin-top: 3rem;
+  }
+  .pricingTable {
+    margin-bottom: 30px;
+  }
+
+  #pricing-section {
+    margin: 6.4rem 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .pricingTable .pricingTable-header:before {
+    height: 300%;
+    top: -267%;
+  }
+  .pricingTable .pricingTable-header:after {
+    height: 230%;
+    top: -106%;
+  }
+
+  .pricingTable .price-value {
+    left: -55px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .pricingTable .price-value {
+    left: -35px;
+  }
+  .primary-heading {
+    font-size: 2.8rem;
+  }
+  .testimonial-text {
+    font-size: 1.4rem;
+  }
+  .pricing-heading {
+    font-size: 2rem;
+  }
+
+  #pricing-section {
+    padding: 0 10%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .pricingTable .pricingTable-header:after {
+    top: -146%;
+  }
+  .pricingTable .price-value {
+    left: -15px;
+    top: 0;
+    font-size: 38px;
+  }
+}
+
+@media only screen and (max-width: 405px) {
+  .primary-heading {
+    font-size: 2rem;
+  }
+  .testimonial-text {
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  .navbar-brand {
+    font-size: 1.8rem;
+  }
+  .pricingTable .pricingTable-header:after {
+    top: 0;
+    transform: rotate(0);
+    height: 80px;
+  }
+  .pricingTable .pricingTable-header:before {
+    top: 0;
+    height: 100px;
+
+    transform: rotate(0);
+  }
+}
